@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useStore } from '../store/zustand';
 import ButtonGlobal from './Common/ButtonGlobal';
 import Modal from './Common/Modal';
-import retry from '../assets/Images/retry.png';
+import retry from '../assets/icons/retry.png';
 
 type SupersetComponentProps = {
   pagename: string;

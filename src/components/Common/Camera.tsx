@@ -2,7 +2,7 @@ import React, { useCallback, useRef } from "react";
 import Webcam from "react-webcam";
 import ButtonGlobal from "./ButtonGlobal";
 import filledcamera from "../../assets/icons/filledcamera.svg";
-import retry from "../../assets/Images/retry.png";
+import retry from "../../assets/icons/retry.png";
 import { useStore } from "../../store/zustand";
 import Frontcam from "./Frontcam";
 import Backcam from "./Backcam";

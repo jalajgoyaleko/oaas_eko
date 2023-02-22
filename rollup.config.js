@@ -3,6 +3,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
+import image from "@rollup/plugin-image";
 
 export default [
   {
@@ -26,6 +27,7 @@ export default [
         compilerOptions: { lib: ["es5", "es6", "dom"], target: "es5" },
       }),
       postcss(),
+      image({ extract: "src/assets/icons" }),
     ],
   },
   {

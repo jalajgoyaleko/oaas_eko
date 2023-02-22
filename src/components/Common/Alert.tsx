@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStore } from '../../store/zustand';
 import ButtonGlobal from './ButtonGlobal';
-import alert from './../../assets/Images/alert.png';
+import alert from './../../assets/icons/alert.png';
 
 const Alert = () => {
   const { setFinish } = useStore();

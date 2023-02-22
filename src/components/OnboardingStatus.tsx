@@ -1,6 +1,6 @@
 import React from 'react';
 import thumb from '../assets/icons/thumb.svg';
-import retry from '../assets/Images/retry.png';
+import retry from '../assets/icons/retry.png';
 import ButtonGlobal from './Common/ButtonGlobal';
 
 const OnboardingStatus = () => {

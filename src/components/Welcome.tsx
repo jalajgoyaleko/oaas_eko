@@ -1,5 +1,5 @@
 import React from 'react';
-import WelcomeIcon from '../assets/Images/welcomeIcon.png';
+import WelcomeIcon from '../assets/icons/welcomeIcon.png';
 import { useStore } from '../store/zustand';
 import ButtonGlobal from './Common/ButtonGlobal';
 import "../assets/Styles/style.css"

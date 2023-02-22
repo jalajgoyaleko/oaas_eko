@@ -1,5 +1,5 @@
 import React from 'react';
-import oaaslogo from '../../assets/Images/logo.png';
+import oaaslogo from '../../assets/icons/logo.png';
 
 const Header = () => {
   return (

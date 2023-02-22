@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import filledcamera from '../assets/icons/filledcamera.svg';
-import selfie from '../assets/Images/selfie.png';
+import selfie from '../assets/icons/selfie.png';
 import camera from '../assets/icons/camera.svg';
 import { useStore } from '../store/zustand';
 import ButtonGlobal from './Common/ButtonGlobal';

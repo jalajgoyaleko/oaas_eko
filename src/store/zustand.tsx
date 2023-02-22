@@ -1,4 +1,4 @@
-import create from 'zustand';
+import { create } from "zustand";
 
 type Zustand = {
   imge: any | null;
@@ -48,13 +48,13 @@ type Zustand = {
 
 export const useStore = create<Zustand>((set) => ({
   steps: [
-    'Location Capturing',
-    'Pan Verification',
-    'Aadhaar Verification',
-    'PAN - Aadhaar Matching',
-    'Business Details',
-    'Video KYC',
-    'Onboarding Status'
+    "Location Capturing",
+    "Pan Verification",
+    "Aadhaar Verification",
+    "PAN - Aadhaar Matching",
+    "Business Details",
+    "Video KYC",
+    "Onboarding Status",
   ],
   imge: null,
   finish: false,
@@ -64,11 +64,11 @@ export const useStore = create<Zustand>((set) => ({
   getLocation: false,
   cameraStatus: false,
   sideBarToggle: false,
-  preview: '',
-  cameraType: '',
-  selectedFile: '',
-  status: 'In Progress',
-  panStatusResult: 'Good Match',
+  preview: "",
+  cameraType: "",
+  selectedFile: "",
+  status: "In Progress",
+  panStatusResult: "Good Match",
   panStatus: 0,
   currentStep: 0,
   uploadedImage: 0,
@@ -89,13 +89,22 @@ export const useStore = create<Zustand>((set) => ({
   setCameraStatus: (input: boolean) => set(() => ({ cameraStatus: input })),
   setUploadedImage: (input: number) => set(() => ({ uploadedImage: input })),
   setCurrentStepInput: (input: number) => set(() => ({ currentStep: input })),
-  setPanStatusResult: (input: string) => set(() => ({ panStatusResult: input })),
-  setCurrentStepInitial: () => set((state) => ({ currentStep: state.currentStep })),
-  setCurrentStepPlus: () => set((state) => ({ currentStep: state.currentStep + 1 })),
-  setCurrentStepMinus: () => set((state) => ({ currentStep: state.currentStep - 1 })),
-  setPanVerificationdone: (input: number) => set(() => ({ panVerificationfailed: input })),
-  setPanVerificationfailed: (input: number) => set(() => ({ panVerificationfailed: input })),
-  setManageVeriyStep: () => set((state) => ({ manageVeriyStep: state.manageVeriyStep + 1 })),
-  setManageVeriyStepinital: () => set((state) => ({ manageVeriyStep: state.manageVeriyStep })),
-  setManageVeriyStepback: () => set((state) => ({ manageVeriyStep: state.manageVeriyStep - 1 }))
+  setPanStatusResult: (input: string) =>
+    set(() => ({ panStatusResult: input })),
+  setCurrentStepInitial: () =>
+    set((state) => ({ currentStep: state.currentStep })),
+  setCurrentStepPlus: () =>
+    set((state) => ({ currentStep: state.currentStep + 1 })),
+  setCurrentStepMinus: () =>
+    set((state) => ({ currentStep: state.currentStep - 1 })),
+  setPanVerificationdone: (input: number) =>
+    set(() => ({ panVerificationfailed: input })),
+  setPanVerificationfailed: (input: number) =>
+    set(() => ({ panVerificationfailed: input })),
+  setManageVeriyStep: () =>
+    set((state) => ({ manageVeriyStep: state.manageVeriyStep + 1 })),
+  setManageVeriyStepinital: () =>
+    set((state) => ({ manageVeriyStep: state.manageVeriyStep })),
+  setManageVeriyStepback: () =>
+    set((state) => ({ manageVeriyStep: state.manageVeriyStep - 1 })),
 }));
